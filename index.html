@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mac book pro</title>
+
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <main>
+        <section class="container my-3">
+            <div class="d-flex justify-content-evenly">
+                <div class="mx-5">
+                    <img src="images/mac.png" class="img-fluid mx-3" alt="" />
+                </div>
+                <div>
+                    <h3>
+                        Customize your Blue-24-inch <br />
+                        iMac with Apple M1 chip.
+                    </h3>
+                    <p class="fs-6">
+                        Apple M1 chip with 8-core CPU with 4 performance cores and 4
+                        efficiency cores, 7-core GPU,and 16-core Neural Engine 8GB unified
+                        memomry 256GB SSD storage Two Thunderbolt/USB 4 ports Magic Mouse
+                        Magic keyboard-us English
+                    </p>
+                    <br />
+                    <!-- Memory Options -->
+                    <h6 class="fw-bold">Memory</h6>
+                    <button id="memory-8gb" class="btn btn-outline-dark">
+                        8GB unified Memory
+                    </button>
+                    <button class="btn btn-outline-dark" id="memory-16gb">16GB unified Memory</button>
+                    <br />
+                    <br />
+                    <br />
+                    <!-- Storage choosing options -->
+                    <h6 class="fw-bold">Storage</h6>
+                    <button class="btn btn-outline-dark" id="storage-256gb">256GB SSD Storage</button>
+                    <button class="btn btn-outline-dark" id="storage-512gb">512GB SSD Storage</button>
+                    <button class="btn btn-outline-dark" id="storage-1tb">1TB SSD Storage</button>
+                    <br />
+                    <br />
+                    <br />
+                    <!-- Delivery priority choosing option -->
+                    <h6 class="fw-bold">choose your delivery option</h6>
+                    <button class="btn btn-outline-dark" id="delivery-prime">
+                        Friday,Aug 25 Free Prime Delivery
+                    </button>
+                    <button class="btn btn-outline-dark" id="delivery-fast">
+                        Saturday,Aug 21,Fast Delivery charge $20
+                    </button>
+                    <br />
+                    <br />
+
+                    <table class="table w-50">
+                        <tbody>
+                            <!-- best price  -->
+                            <tr>
+                                <td class="fw-bold">Best Price</td>
+                                <td class="fw-bold">$ <span id="best-cost">1299</span></td>
+                            </tr>
+                            <!-- Extra memory cost -->
+                            <tr>
+                                <td class="fw-bold">Extra memory cost</td>
+                                <td class="fw-bold">$ <span id="extra-memory-cost">0</span></td>
+                            </tr>
+                            <!-- Extra storage cost -->
+                            <tr>
+                                <td class="fw-bold">Extra storage cost</td>
+                                <td class="fw-bold">$<span id="extra-storage-cost">0</span></td>
+                            </tr>
+                            <!-- Delivery cost -->
+                            <tr style="border-bottom: 1px solid black">
+                                <td class="fw-bold">Delivery charge</td>
+                                <td class="fw-bold">$<span id="delivery-charge-cost">0</span></td>
+                            </tr>
+                            <!-- sub total price -->
+                            <tr>
+                                <td class="fw-bold">Total price</td>
+                                <td class="fw-bold" >$ <span id="sub-total">1299</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h6>Add promo code</h6>
+                    <div class="input-group mb-3 w-25">
+                        <input type="text" class="form-control" id="promo-code-input" />
+                        <button class="btn btn-danger" type="button" id="promo-button">Apply</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <hr class="w-75 mx-auto" />
+            <h2 class="text-center fw-bold">Total: $ <span id="total" >1299</span></h2>
+        </section>
+    </main>
+    <!-- Bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+    <!-- javascript -->
+    <script src="script.js"></script>
+</body>
+
+</html>
